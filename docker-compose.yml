@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    mqtt:
+        image: eclipse-mosquitto:latest
+        ports:
+            - "1883:1883"
+            - "9001:9001"
+        #volumes:
+         #   - $HOME/mqtt/config:/mosquitto/config
+         #   - $HOME/mqtt/data:/mosquitto/data
+         #   - $HOME/mqtt/log:/mosquitto/log
+    
+    
